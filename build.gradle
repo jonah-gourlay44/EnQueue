@@ -17,6 +17,10 @@ dependencies {
     compile group: 'javax.json', name: 'javax.json-api', version: '1.0-b01'
     compile "javax.json:javax.json-api:1.1"
     compile "org.glassfish:javax.json:1.1"
+    
+    //use google HTTP client
+    compile group: 'com.google.http-client', name: 'google-http-client', version: '1.23.0'
+    
 }
 
 test.testLogging {
@@ -31,4 +35,5 @@ jacocoTestReport {
         html.enabled = true
         // html.destination "${buildDir}/reports/coverage"
         // xml.destination "${buildDir}/reports/coverage"
-    }
+ 	}
+ }
