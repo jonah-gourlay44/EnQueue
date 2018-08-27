@@ -21,6 +21,12 @@ dependencies {
     //use google HTTP client
     compile group: 'com.google.http-client', name: 'google-http-client', version: '1.23.0'
     
+    //Spotify web API
+    compile 'se.michaelthelin.spotify:spotify-web-api-java:2.0.4'
+    
+    // https://mvnrepository.com/artifact/com.sun.net.httpserver/http
+    compile group: 'com.sun.net.httpserver', name: 'http', version: '20070405'
+    
 }
 
 test.testLogging {
