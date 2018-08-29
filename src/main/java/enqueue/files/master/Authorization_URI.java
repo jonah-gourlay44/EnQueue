@@ -39,10 +39,13 @@ public class Authorization_URI {
 	
 	public static URI authorizationCodeUri_Sync() {
 	    final URI uri = enqueueAuth.execute();
-	    
+	    System.out.println(state);
 	    System.out.println("URI: " + uri.toString());
 	    return uri;
 	  }
+	public static String getState() {
+		return state;
+	}
 	
 	public static void authorizationCodeUri_Async() {
 	    try {
@@ -52,7 +55,7 @@ public class Authorization_URI {
 
 	      final URI uri = uriFuture.get();
 
-	      System.out.println("URI: " + uri.toString());
+	      //System.out.println("URI: " + uri.toString());
 	    } catch (InterruptedException | ExecutionException e) {
 	      System.out.println("Error: " + e.getCause().getMessage());
 	    }

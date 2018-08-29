@@ -27,7 +27,6 @@ public class Authorization_Code {
 		.build();
 	
 	public static void authorizationCode_Sync() {
-		System.out.println(code);
 		try {
 			final AuthorizationCodeCredentials authorizationCodeCredentials = authorizationCodeRequest.execute();
 			
